@@ -8,7 +8,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Minimal an Admin Panel Category Flat Bootstrap Responsive Website Template | Maps :: w3layouts</title>
+<title>Minimal an Admin Panel Category Flat Bootstrap Responsive Website Template | Faqs :: w3layouts</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Minimal Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -48,14 +48,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</script>
 
 
-<!---->
- <script type="text/javascript" src="//maps.google.com/maps/api/js?sensor=true"></script>
-  <script type="text/javascript" src="js/gmaps.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/examples.css" />
+
 </head>
 <body>
 <div id="wrapper">
-        <!----->
+       <!----->
         <nav class="navbar-default navbar-static-top" role="navigation">
              <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -64,7 +61,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-               <h1> <a class="navbar-brand" href="index.html">Minimal</a></h1>         
+               <h1> <a class="navbar-brand" href="index">Minimal</a></h1>         
 			   </div>
 			 <div class=" border-bottom">
         	<div class="full-left">
@@ -150,10 +147,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<li class="dropdown">
 		              <a href="#" class="dropdown-toggle dropdown-at" data-toggle="dropdown"><span class=" name-caret">Rackham<i class="caret"></i></span><img src="images/wo.jpg"></a>
 		              <ul class="dropdown-menu " role="menu">
-		                <li><a href="profile.html"><i class="fa fa-user"></i>Edit Profile</a></li>
-		                <li><a href="inbox.html"><i class="fa fa-envelope"></i>Inbox</a></li>
-		                <li><a href="calendar.html"><i class="fa fa-calendar"></i>Calender</a></li>
-		                <li><a href="inbox.html"><i class="fa fa-clipboard"></i>Tasks</a></li>
+		                <li><a href="profile"><i class="fa fa-user"></i>Edit Profile</a></li>
+		                <li><a href="inbox"><i class="fa fa-envelope"></i>Inbox</a></li>
+		                <li><a href="calendar"><i class="fa fa-calendar"></i>Calender</a></li>
+		                <li><a href="inbox"><i class="fa fa-clipboard"></i>Tasks</a></li>
 		              </ul>
 		            </li>
 		           
@@ -168,52 +165,52 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <ul class="nav" id="side-menu">
 				
                     <li>
-                        <a href="index.html" class=" hvr-bounce-to-right"><i class="fa fa-dashboard nav_icon "></i><span class="nav-label">Dashboards</span> </a>
+                        <a href="index" class=" hvr-bounce-to-right"><i class="fa fa-dashboard nav_icon "></i><span class="nav-label">Dashboards</span> </a>
                     </li>
                    
                     <li>
                         <a href="#" class=" hvr-bounce-to-right"><i class="fa fa-indent nav_icon"></i> <span class="nav-label">Menu Levels</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li><a href="graphs.html" class=" hvr-bounce-to-right"> <i class="fa fa-area-chart nav_icon"></i>Graphs</a></li>
+                            <li><a href="graphs" class=" hvr-bounce-to-right"> <i class="fa fa-area-chart nav_icon"></i>Graphs</a></li>
                             
-                            <li><a href="maps.html" class=" hvr-bounce-to-right"><i class="fa fa-map-marker nav_icon"></i>Maps</a></li>
+                            <li><a href="maps" class=" hvr-bounce-to-right"><i class="fa fa-map-marker nav_icon"></i>Maps</a></li>
 			
-						<li><a href="typography.html" class=" hvr-bounce-to-right"><i class="fa fa-file-text-o nav_icon"></i>Typography</a></li>
+						<li><a href="typography" class=" hvr-bounce-to-right"><i class="fa fa-file-text-o nav_icon"></i>Typography</a></li>
 
 					   </ul>
                     </li>
 					 <li>
-                        <a href="inbox.html" class=" hvr-bounce-to-right"><i class="fa fa-inbox nav_icon"></i> <span class="nav-label">Inbox</span> </a>
+                        <a href="inbox" class=" hvr-bounce-to-right"><i class="fa fa-inbox nav_icon"></i> <span class="nav-label">Inbox</span> </a>
                     </li>
                     
                     <li>
-                        <a href="gallery.html" class=" hvr-bounce-to-right"><i class="fa fa-picture-o nav_icon"></i> <span class="nav-label">Gallery</span> </a>
+                        <a href="gallery" class=" hvr-bounce-to-right"><i class="fa fa-picture-o nav_icon"></i> <span class="nav-label">Gallery</span> </a>
                     </li>
                      <li>
                         <a href="#" class=" hvr-bounce-to-right"><i class="fa fa-desktop nav_icon"></i> <span class="nav-label">Pages</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li><a href="404.html" class=" hvr-bounce-to-right"> <i class="fa fa-info-circle nav_icon"></i>Error 404</a></li>
-                            <li><a href="faq.html" class=" hvr-bounce-to-right"><i class="fa fa-question-circle nav_icon"></i>FAQ</a></li>
-                            <li><a href="blank.html" class=" hvr-bounce-to-right"><i class="fa fa-file-o nav_icon"></i>Blank</a></li>
+                            <li><a href="404" class=" hvr-bounce-to-right"> <i class="fa fa-info-circle nav_icon"></i>Error 404</a></li>
+                            <li><a href="faq" class=" hvr-bounce-to-right"><i class="fa fa-question-circle nav_icon"></i>FAQ</a></li>
+                            <li><a href="blank" class=" hvr-bounce-to-right"><i class="fa fa-file-o nav_icon"></i>Blank</a></li>
                        </ul>
                     </li>
                      <li>
-                        <a href="layout.html" class=" hvr-bounce-to-right"><i class="fa fa-th nav_icon"></i> <span class="nav-label">Grid Layouts</span> </a>
+                        <a href="layout" class=" hvr-bounce-to-right"><i class="fa fa-th nav_icon"></i> <span class="nav-label">Grid Layouts</span> </a>
                     </li>
                    
                     <li>
                         <a href="#" class=" hvr-bounce-to-right"><i class="fa fa-list nav_icon"></i> <span class="nav-label">Forms</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li><a href="forms.html" class=" hvr-bounce-to-right"><i class="fa fa-align-left nav_icon"></i>Basic forms</a></li>
-                            <li><a href="validation.html" class=" hvr-bounce-to-right"><i class="fa fa-check-square-o nav_icon"></i>Validation</a></li>
+                            <li><a href="forms" class=" hvr-bounce-to-right"><i class="fa fa-align-left nav_icon"></i>Basic forms</a></li>
+                            <li><a href="validation" class=" hvr-bounce-to-right"><i class="fa fa-check-square-o nav_icon"></i>Validation</a></li>
                         </ul>
                     </li>
                    
                     <li>
                         <a href="#" class=" hvr-bounce-to-right"><i class="fa fa-cog nav_icon"></i> <span class="nav-label">Settings</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li><a href="signin.html" class=" hvr-bounce-to-right"><i class="fa fa-sign-in nav_icon"></i>Signin</a></li>
-                            <li><a href="signup.html" class=" hvr-bounce-to-right"><i class="fa fa-sign-in nav_icon"></i>Singup</a></li>
+                            <li><a href="signin" class=" hvr-bounce-to-right"><i class="fa fa-sign-in nav_icon"></i>Signin</a></li>
+                            <li><a href="signup" class=" hvr-bounce-to-right"><i class="fa fa-sign-in nav_icon"></i>Singup</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -224,186 +221,50 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
        <div class="content-main">
  
  	<!--banner-->	
-		  <div class="banner">
-		    	<h2>
-				<a href="index.html">Home</a>
+		   <div class="banner">
+				<h2>
+				<a href="index">Home</a>
 				<i class="fa fa-angle-right"></i>
-				<span>Maps</span>
+				<span>Faqs</span>
 				</h2>
 		    </div>
 		<!--//banner-->
- 	<!--grid-->
- 	<div class="map-grid">
- 	<div class="map-system">
- 		<div class="col-md-6 map-1">
+ 	 <!--faq-->
+ 	<div class="asked">
 	
-    <div class="span11">
-      <div id="map2"></div>
-  
-	</div>
-	 
-	 <script type="text/javascript">
-    var map;
-    $(document).ready(function(){
-      map = new GMaps({
-        el: '#map2',
-        lat: -12.043333,
-        lng: -77.028333,
-        zoomControl : true,
-        zoomControlOpt: {
-            style : 'SMALL',
-            position: 'TOP_LEFT'
-        },
-        panControl : false,
-        streetViewControl : false,
-        mapTypeControl: false,
-        overviewMapControl: false
-      });
-    });
-  </script>
- 		</div>
- 		<div class="col-md-6 map-2">
-		
-      <div class="span11">
-        <div id="map1"></div>
-      
-	  </div>
-	    <script>
-        $(function () {
-          var map = new GMaps({
-          el: "#map1",
-          lat: 41.895465,
-          lng: 12.482324,
-          zoom: 5, 
-          zoomControl : true,
-          zoomControlOpt: {
-            style : "SMALL",
-            position: "TOP_LEFT"
-          },
-          panControl : true,
-          streetViewControl : false,
-          mapTypeControl: false,
-          overviewMapControl: false
-        });
-        
-        var styles = [
-            {
-              stylers: [
-                { hue: "#00ffe6" },
-                { saturation: -20 }
-              ]
-            }, {
-                featureType: "road",
-                elementType: "geometry",
-                stylers: [
-                    { lightness: 100 },
-                    { visibility: "simplified" }
-              ]
-            }, {
-                featureType: "road",
-                elementType: "labels",
-                stylers: [
-                    { visibility: "off" }
-              ]
-            }
-        ];
-        
-        map.addStyle({
-            styledMapName:"Styled Map",
-            styles: styles,
-            mapTypeId: "map_style"  
-        });
-        
-        map.setStyle("map_style");
-      });
-    </script>
-	
-		</div>
- 		<div class="clearfix"> </div>
- 		
-	</div>
-	<div class="map-system">
- 	
- 		<div class="col-md-6 map-1">
- 
-    <div class="span11">
-      <div id="map3"></div>
-    </div>
 
-	</div>
-	 <script type="text/javascript">
-    var map;
-    $(document).ready(function(){
-      map = new GMaps({
-        el: '#map3',
-        lat: -12.043333,
-        lng: -77.028333,
-        mapTypeControlOptions: {
-          mapTypeIds : ["hybrid", "roadmap", "satellite", "terrain", "osm", "cloudmade"]
-        }
-      });
-      map.addMapType("osm", {
-        getTileUrl: function(coord, zoom) {
-          return "http://tile.openstreetmap.org/" + zoom + "/" + coord.x + "/" + coord.y + ".png";
-        },
-        tileSize: new google.maps.Size(256, 256),
-        name: "OpenStreetMap",
-        maxZoom: 18
-      });
-      map.addMapType("cloudmade", {
-        getTileUrl: function(coord, zoom) {
-          return "http://b.tile.cloudmade.com/8ee2a50541944fb9bcedded5165f09d9/1/256/" + zoom + "/" + coord.x + "/" + coord.y + ".png";
-        },
-        tileSize: new google.maps.Size(256, 256),
-        name: "CloudMade",
-        maxZoom: 18
-      });
-      map.setMapTypeId("osm");
-    });
-  </script>
-  	<div class="col-md-6 map-2">
-		
-     <div class="span11">
-      <div id="map"></div>
-    </div>
-	   <script type="text/javascript">
-    var map;
+			<div class="questions">
+				<h5>1.What is Lorem Ipsum?</h5>
+	        	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+	        </div>
+			 <div class="questions">
+				<h5>2.What is Lorem Ipsum dummy text ever since the 1500s?</h5>
+			    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+			 </div>	
+			  <div class="questions">
+				<h5>3.What is Duis laoreet, erat quis gravida porttitor odio felis ornare dui?</h5>
+				<p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam semper elit risus, nec suscipit tellus tincidunt quis. Fusce non auctor enim. Suspendisse sit amet erat mollis, suscipit nisl sed, condimentum turpis. Curabitur faucibus, nisl ut aliquam porta, massa tortor tristique dolor, eget porttitor velit ligula vel eros. Sed egestas aliquet tellus. Nulla ac luctus urna. Pellentesque feugiat eros quis nibh consectetur, eget dapibus magna egestas. Phasellus non efficitur metus.</p>
+			 </div>	
+			  <div class="questions">
+				<h5>4.What is Quisque sollicitudin diam vel mauris volutpat viverra Proin ac imperdiet libero?</h5>
+				<p>Proin dignissim mi sit amet tincidunt varius. Quisque molestie fermentum dignissim. Sed in urna eget tortor congue tempus. Vestibulum gravida, erat in eleifend ultricies, felis lorem dictum nulla, ut tincidunt neque libero et nibh. Nullam at eros eu ligula auctor interdum a eget lorem. Praesent molestie eros vitae felis efficitur, at finibus sem molestie. Ut sit amet nisi at nunc pulvinar dapibus. Sed non neque et tortor finibus mattis. Mauris sit amet consectetur eros. Sed et ex posuere, vulputate dolor vel, pulvinar felis. </p>
+			 </div>	
+			 
+			  <div class="questions">
+				<h5>5.What is Nam semper elit risus, nec suscipit tellus tincidunt quis?</h5>
+			    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+			 </div>	
+			  <div class="questions">
+				<h5>6.What is Quisque molestie fermentum dignissim?</h5>
+				<p>Sed eget nunc ex. Donec erat est, dapibus ac massa in, laoreet sagittis eros. Aliquam eget arcu feugiat leo elementum tristique. Praesent facilisis aliquam lorem sed pharetra. Donec scelerisque ipsum vel tincidunt gravida. Aliquam erat volutpat. Etiam mattis rhoncus massa, quis semper purus ornare id. Quisque sit amet mattis ipsum, in porttitor massa. Nullam tincidunt mi vel enim volutpat, a elementum libero imperdiet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean tincidunt eros eu nisl consequat facilisis. Maecenas ac accumsan elit, sit amet gravida nulla.</p>
+			 </div>	
+			  <div class="questions">
+				<h5>7.What is Vestibulum ante ipsum primis in faucibus orci luctus et?</h5>
+			    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+			 </div>				    
 
-    var getTile = function(coord, zoom, ownerDocument) {
-      var div = ownerDocument.createElement('div');
-      div.innerHTML = coord;
-      div.style.width = this.tileSize.width + 'px';
-      div.style.height = this.tileSize.height + 'px';
-      div.style.background = 'rgba(250, 250, 250, 0.55)';
-      div.style.fontFamily = 'Monaco, Andale Mono, Courier New, monospace';
-      div.style.fontSize = '10';
-      div.style.fontWeight = 'bolder';
-      div.style.border = 'dotted 1px #aaa';
-      div.style.textAlign = 'center';
-      div.style.lineHeight = this.tileSize.height + 'px';
-      return div;
-    };
-
-    $(document).ready(function(){
-      map = new GMaps({
-        el: '#map',
-        lat: -12.043333,
-        lng: -77.028333
-      });
-      map.addOverlayMapType({
-        index: 0,
-        tileSize: new google.maps.Size(256, 256),
-        getTile: getTile
-      });
-    });
-  </script>
-		</div>
- 		<div class="clearfix"> </div>
- 		
-	</div>
-	
-	</div>
- 	<!--//grid-->
+</div>
+	<!--//faq-->
 		<!---->
 <div class="copy">
             <p> &copy; 2016 Minimal. All Rights Reserved | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>	    </div>
