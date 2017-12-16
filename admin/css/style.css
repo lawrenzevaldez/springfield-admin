@@ -1503,7 +1503,7 @@ label.control-label {
   backface-visibility: hidden;
   -moz-osx-font-smoothing: grayscale;
   position: relative;
-  background: #4CAF50;
+  background: #43A047;
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
@@ -1538,7 +1538,7 @@ label.control-label {
   transform: scaleX(0);
 }
 .login-sub{
-	background: #4CAF50;
+	background: #43A047;
 }
 .login-sub:before {
 	background: #4CAF50; 
