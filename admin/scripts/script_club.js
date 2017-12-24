@@ -8,6 +8,7 @@
 			$('#add_club')[0].reset();
 			$('.modal-title').text("Add New Club");
 			$('#action').val("Add");
+			CKEDITOR.instances.clubinfo.setData("");
 			$('#operation').val("Add");
 		});
 
@@ -21,8 +22,8 @@
 			},
 			"columnDefs":[
 			{
-				"targets":[0, 3, 4],
-				"ordertable": false,
+				"targets":2,
+				render: $.fn.dataTable.render.ellipsis(20)
 			},
 			],
 		});
