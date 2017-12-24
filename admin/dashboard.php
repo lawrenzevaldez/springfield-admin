@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Minimal an Admin Panel Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+<title> An Android based Clubs and Events monitoring with QR code for Spring Field School of Novaliches</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -44,7 +44,7 @@
 
 		<?php include "navbar.php"; ?>
 
-        <div id="page-wrapper" class="gray-bg dashbard-1">
+        <div id="page-wrapper" class="gray-bg dashboard-1">
        <div class="content-main">
  
   		<!--banner-->	
@@ -64,8 +64,8 @@
 			<div class="col-md-4 ">
 				<div class="content-top-1">
 				<div class="col-md-6 top-content">
-					<h5>Tasks</h5>
-					<label>8761</label>
+					<h5>Number of Students</h5>
+					<label>361</label>
 				</div>
 				<div class="col-md-6 top-content1">	   
 					<div id="demo-pie-1" class="pie-title-center" data-percent="25"> <span class="pie-value"></span> </div>
@@ -74,8 +74,8 @@
 				</div>
 				<div class="content-top-1">
 				<div class="col-md-6 top-content">
-					<h5>Points</h5>
-					<label>6295</label>
+					<h5>Number of Clubs</h5>
+					<label>6</label>
 				</div>
 				<div class="col-md-6 top-content1">	   
 					<div id="demo-pie-2" class="pie-title-center" data-percent="50"> <span class="pie-value"></span> </div>
@@ -84,8 +84,8 @@
 				</div>
 				<div class="content-top-1">
 				<div class="col-md-6 top-content">
-					<h5>Cards</h5>
-					<label>3401</label>
+					<h5>Number of Events</h5>
+					<label>6</label>
 				</div>
 				<div class="col-md-6 top-content1">	   
 					<div id="demo-pie-3" class="pie-title-center" data-percent="75"> <span class="pie-value"></span> </div>
@@ -98,10 +98,10 @@
 				<!----->
 				<div class="content-graph">
 				<div class="content-color">
-					<div class="content-ch"><p><i></i>Chrome </p><span>100%</span>
+					<div class="content-ch"><p><i></i>Clubs</p><span>100%</span>
 					<div class="clearfix"> </div>
 					</div>
-					<div class="content-ch1"><p><i></i>Safari</p><span> 50%</span>
+					<div class="content-ch1"><p><i></i>Events</p><span> 50%</span>
 					<div class="clearfix"> </div>
 					</div>
 				</div>
@@ -116,12 +116,12 @@
 										var graphData = [{
 												// Visits
 												data: [ [6, 1300], [7, 1600], [8, 1900], [9, 2100], [10, 2500], [11, 2200], [12, 2000], [13, 1950], [14, 1900], [15, 2000] ],
-												color: '#999999'
+												color: 'gray'
 											}, {
 												// Returning Visits
 												data: [ [6, 500], [7, 600], [8, 550], [9, 600], [10, 800], [11, 900], [12, 800], [13, 850], [14, 830], [15, 1000] ],
-												color: '#999999',
-												points: { radius: 4, fillColor: '#7f8c8d' }
+												color: 'gray',
+												points: { radius: 4, fillColor: 'white' }
 											}
 										];
 									

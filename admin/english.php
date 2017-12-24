@@ -64,8 +64,24 @@
 
 			<div class="blank-page">
 				
-	        	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-	        		Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+	        	<p><b> <u> English Club </u> </b> is for students who love english and those who don’t! Students who need help with english grammars and homeworks may come for support from adults and other students who speaks english fluently. Students who enjoy english may come and tutor other students. Another option for students who are passionate about english is to work on challenging, in-depth problems that stretch their brains and fun and interesting activities.<br>
+	        	<br>
+	        	<br>
+	        	<b> <u> By Laws: </u> </b> <br>
+	        		<br>
+
+	        	- Members are in good standing by attending one meeting a month. <br>
+
+				- The president, treasurer, and faculty advisor will be in charge of finances. <br>
+
+				- The location and time of the next meeting will be announced at the end of the preceding meeting. <br>
+
+ 				- Elections will be held in January on a Friday designated by the membership. <br>
+
+ 				- A simple voice nomination suffices to offer a candidate for nomination for any position. A consensus or majority  	vote will suffice to elect the nominated individual. <br>
+
+				- A member is entitled to vote by having attended three meetings to obtain membership and must have attended the 		previous English Club meeting prior to the vote. <br>
+ </p>
 	        </div>
 	       </div>
 	

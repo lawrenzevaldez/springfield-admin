@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+f<!DOCTYPE HTML>
 <html>
 <head>
 <title>Minimal an Admin Panel Category Flat Bootstrap Responsive Website Template | Blank :: w3layouts</title>
@@ -64,8 +64,33 @@
 
 			<div class="blank-page">
 				
-	        	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-	        		Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+	        	<p>
+	        		<b> <u> Math Club </u> </b> is for students who love math-and those who don’t!  Students who need help with math homework and concepts may come for support from adults and other students with good understanding of those concepts and skills. Students who enjoy math may come and tutor other students. Another option for students who are passionate about math is to work on challenging, in-depth problems that stretch their brains. <br>
+	        			<br>
+
+
+	        		<b> <u> By Laws: </u> </b> <br>
+	        		<br>
+	        				- Students are classified as members or associates at high schools. <br>
+
+							- Members shall demonstrate ability to work with others and shall possess qualities of integrity and 	   reliability. <br>
+
+							- No student will be denied membership on account of race, religion, color, creed, ethnicity, national origin, gender, sexual preference and/or physical disability. <br>
+
+							-  Candidates for membership shall have spent at least one semester in high school. <br>
+
+							- Members are expected to take an active part in the chapter and are entitled to vote and run for office. <br> 
+
+							- To continue in good standing, members are expected to attend at least 50% of regularly scheduled chapter meetings. <br>
+
+							-  The club officers shall be the following: president, vice-president, secretary, and the treasurer. <br>
+
+							- An officer may not hold the same office for more than one year. <br>
+
+							- Officers shall attend at least ¾ of all scheduled meetings in order to remain in office. <br>
+																															</b>
+
+				</p>
 	        </div>
 	       </div>
 	

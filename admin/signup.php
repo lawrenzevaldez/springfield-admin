@@ -9,6 +9,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <html>
 <head>
 <title>Minimal an Admin Panel Category Flat Bootstrap Responsive Website Template | Signup :: w3layouts</title>
+<body background="green">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Minimal Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -23,7 +24,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </head>
 <body>
 	<div class="login">
-		<h1><a href="index">Minimal </a></h1>
+		<h1><a href="index">Spring Field </a></h1>
 		<div class="login-bottom">
 			<h2>Register</h2>
 			<div class="col-md-6">
@@ -31,14 +32,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					<input type="text" placeholder="Email" required="">
 					<i class="fa fa-envelope"></i>
 				</div>
-				<div class="login-mail">
-					<input type="password" placeholder="Password" required="">
-					<i class="fa fa-lock"></i>
-				</div>
-				<div class="login-mail">
-					<input type="password" placeholder="Repeated password" required="">
-					<i class="fa fa-lock"></i>
-				</div>
+				
+				
 				  <a class="news-letter" href="#">
 						 <label class="checkbox1"><input type="checkbox" name="checkbox" ><i> </i>I agree with the terms</label>
 					   </a>
@@ -48,7 +43,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				<label class="hvr-shutter-in-horizontal login-sub">
 					<input type="submit" value="Submit">
 					</label>
-					<p>Already register</p>
+					<p>Already registered
+					</p>
 				<a href="signin" class="hvr-shutter-in-horizontal">Login</a>
 			</div>
 			<div class="clearfix"> </div>

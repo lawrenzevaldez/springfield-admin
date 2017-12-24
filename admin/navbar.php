@@ -7,7 +7,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-               <h1> <a class="navbar-brand" href="dashboard">Minimal</a></h1>         
+               <h1> <a class="navbar-brand" href="dashboard">Spring Field</a></h1>         
                </div>
              <div class=" border-bottom">
             <div class="full-left">
@@ -44,15 +44,48 @@
                     <li>
                         <a href="dashboard" class=" hvr-bounce-to-right"><i class="fa fa-dashboard nav_icon "></i><span class="nav-label">Dashboards</span> </a>
                     </li>
+
                      <li>
-                        <a href="#" class=" hvr-bounce-to-right"><i class="fa fa-desktop nav_icon"></i> <span class="nav-label">Clubs</span><span class="fa arrow"></span></a>
+                        <a href="club" class=" hvr-bounce-to-right"><i class="fa fa-dashboard nav_icon "></i><span class="nav-label">Clubs</span> </a>
+                     </li>
+                    
+
+
+                       <li>
+                        <a href="#" class=" hvr-bounce-to-right"><i class="fa fa-desktop nav_icon"></i> <span class="nav-label">Events</span><span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
-                            <li><a href="math" class=" hvr-bounce-to-right"> <i class="fa fa-info-circle nav_icon"></i>Math</a></li>
-                            <li><a href="english" class=" hvr-bounce-to-right"><i class="fa fa-question-circle nav_icon"></i>English</a></li>
-                            <li><a href="science" class=" hvr-bounce-to-right"><i class="fa fa-file-o nav_icon"></i>Science</a></li>
+                          
+                            <li><a href="" class=" hvr-bounce-to-right"> <i class="fa fa-clipboard nav_icon"></i>Foundation Day</a></li>
+                            <li><a href="" class=" hvr-bounce-to-right"><i class="fa fa-clipboard nav_icon"></i>P.E Day</a></li>
+                            <li><a href="" class=" hvr-bounce-to-right"><i class="fa fa-clipboard nav_icon"></i>Nutrition Month</a></li>
+                            <li><a href="" class=" hvr-bounce-to-right"><i class="fa fa-clipboard nav_icon"></i>Intramurals</a></li>
+                            <li><a href="" class=" hvr-bounce-to-right"><i class="fa fa-clipboard
+                             nav_icon"></i>Teacher's Day</a></li>
+                            <li><a href="" class=" hvr-bounce-to-right"><i class="fa fa-clipboard nav_icon"></i>Christmas Party</a></li>
                        </ul>
-                    </li>
-                     <li><a href="officers" class=" hvr-bounce-to-right"><i class="fa fa-file-o nav_icon"></i>Club Officers</a></li>
+                    
+
+                    <li>
+                      <a href="#" class=" hvr-bounce-to-right"><i class="fa fa-group nav_icon"></i> <span class="nav-label">Club Officers</span><span class="fa arrow"></span></a>
+                      <ul class="nav nav-second-level">
+                            <li><a href="Math Club Officers" class=" hvr-bounce-to-right"> <i class="fa fa-user nav_icon"></i><i>Math club Officers</i></a></li>
+
+                            <li><a href="English Club Officers" class=" hvr-bounce-to-right"><i class="fa fa-user nav_icon"></i><i>English Club Officers</i></a></li>
+
+                            <li><a href="Science Club Officers" class=" hvr-bounce-to-right"><i class="fa fa-user nav_icon"></i><i>Science Club Officers</i></a></li>
+
+                            <li><a href="Art Club Officers" class=" hvr-bounce-to-right"><i class="fa fa-user nav_icon"></i><i>Art Club Officers</i></a></li>
+
+                             <li><a href="Theatre Club Officers" class=" hvr-bounce-to-right"><i class="fa fa-user nav_icon"></i><i>Theatre Club Officers</i></a></li>
+
+                              <li><a href="Charity Club Officers" class=" hvr-bounce-to-right"><i class="fa fa-user nav_icon"></i><i>Charity Club Officers</i></a></li>
+
+
+
+                    </ul>   
+
+
+
 
                    
                     <!-- <li>
