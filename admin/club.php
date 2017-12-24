@@ -23,6 +23,14 @@ include "modals/modal_club.php";
 <!-- Mainly scripts -->
 <script src="js/jquery.metisMenu.js"></script>
 <script src="js/jquery.slimscroll.min.js"></script>
+<style type="text/css">
+	.td-limit {
+    max-width: 70px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+</style>
 <!-- Custom and plugin javascript -->
 <link href="css/custom.css" rel="stylesheet">
 <script src="ckeditor/ckeditor.js"></script>
@@ -76,7 +84,7 @@ include "modals/modal_club.php";
 				<br>
 				<br>
 
-	        	<table class="table table-bordered" id="club_data">
+	        	<table class="table table-bordered datatable" id="club_data">
 			    <thead>
 			      <tr>
 			        <th>#</th>
@@ -104,6 +112,7 @@ include "modals/modal_club.php";
 	<script src="js/jquery.nicescroll.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="js/datatables.min.js"> </script>
+	<script src="js/ellipsis.js"> </script>
 	<!--//scrolling js-->
 	<script type="text/javascript" src="scripts/script_club.js"></script>
 </body>
