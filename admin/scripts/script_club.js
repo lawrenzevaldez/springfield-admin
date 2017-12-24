@@ -43,7 +43,7 @@
     				processData:false,
     				success:function(data)
     				{
-    					alert(data);
+    					swal("Success", data, "success");
     					$('#add_club')[0].reset();
     					$('#addClub').modal('hide');
     					dataTable.ajax.reload();
@@ -78,22 +78,27 @@
 
 		$(document).on('click', '.delete', function(){
 			var club_id = $(this).attr("id");
-			if(confirm("Are you sure you want to delete this data?"))
-			{
-				$.ajax({
+			swal({
+			  title: "Are you sure?",
+			  text: "Your will not be able to recover this record!",
+			  type: "warning",
+			  showCancelButton: true,
+			  confirmButtonClass: "btn-danger",
+			  confirmButtonText: "Confirm",
+			  closeOnConfirm: false
+			},
+			function(){
+			  $.ajax({
 					url:"scripts/functions/delete_club.php",
 					method:"POST",
 					data:{club_id:club_id},
 					success:function(data)
 					{
-						alert(data);
-						dataTable.ajax.reload();
-					}
-				});
-			}
-			else
-			{
-				return false;
-			} 
+	                    swal("Success", data,"success");
+	                    dataTable.ajax.reload();
+	                }
+	            });
+			});
+
 		});
 	});

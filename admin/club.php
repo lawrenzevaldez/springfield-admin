@@ -18,6 +18,7 @@ include "modals/modal_club.php";
 <link rel="stylesheet" type="text/css" href="css/datatables.min.css"/>
 <link href="css/style.css" rel='stylesheet' type='text/css' />
 <link href="css/font-awesome.css" rel="stylesheet"> 
+<link href="css/sweetalert.css" rel="stylesheet"> 
 <script src="js/jquery.min.js"> </script>
 <script src="js/bootstrap.min.js"> </script>
 <!-- Mainly scripts -->
@@ -113,6 +114,7 @@ include "modals/modal_club.php";
 	<script src="js/scripts.js"></script>
 	<script src="js/datatables.min.js"> </script>
 	<script src="js/ellipsis.js"> </script>
+	<script src="js/sweetalert.min.js"> </script>
 	<!--//scrolling js-->
 	<script type="text/javascript" src="scripts/script_club.js"></script>
 </body>
