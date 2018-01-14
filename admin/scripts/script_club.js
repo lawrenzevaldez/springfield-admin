@@ -52,7 +52,7 @@
 			}
 			else
 			{
-				alert("All fields are required.");
+				swal('Oops...', "All fields are required." ,'error')
 			}
 		});
 

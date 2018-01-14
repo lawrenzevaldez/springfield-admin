@@ -52,49 +52,19 @@
 
 
                        <li>
-                        <a href="#" class=" hvr-bounce-to-right"><i class="fa fa-desktop nav_icon"></i> <span class="nav-label">Events</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                          
-                            <li><a href="" class=" hvr-bounce-to-right"> <i class="fa fa-clipboard nav_icon"></i>Foundation Day</a></li>
-                            <li><a href="" class=" hvr-bounce-to-right"><i class="fa fa-clipboard nav_icon"></i>P.E Day</a></li>
-                            <li><a href="" class=" hvr-bounce-to-right"><i class="fa fa-clipboard nav_icon"></i>Nutrition Month</a></li>
-                            <li><a href="" class=" hvr-bounce-to-right"><i class="fa fa-clipboard nav_icon"></i>Intramurals</a></li>
-                            <li><a href="" class=" hvr-bounce-to-right"><i class="fa fa-clipboard
-                             nav_icon"></i>Teacher's Day</a></li>
-                            <li><a href="" class=" hvr-bounce-to-right"><i class="fa fa-clipboard nav_icon"></i>Christmas Party</a></li>
-                       </ul>
-                    
+                        <a href="events" class=" hvr-bounce-to-right"><i class="fa fa-dashboard nav_icon "></i><span class="nav-label">Events</span> </a>
+                    </li>
 
                     <li>
-                      <a href="#" class=" hvr-bounce-to-right"><i class="fa fa-group nav_icon"></i> <span class="nav-label">Club Officers</span><span class="fa arrow"></span></a>
+                        <a href="#" class=" hvr-bounce-to-right"><i class="fa fa-group nav_icon"></i> <span class="nav-label">Clubs</span><span class="fa arrow"></span></a>
                       <ul class="nav nav-second-level">
-                            <li><a href="Math Club Officers" class=" hvr-bounce-to-right"> <i class="fa fa-user nav_icon"></i><i>Math club Officers</i></a></li>
+                            <li><a href="" class=" hvr-bounce-to-right"> <i class="fa fa-user nav_icon"></i><i>View Clubs</i></a></li>
 
-                            <li><a href="English Club Officers" class=" hvr-bounce-to-right"><i class="fa fa-user nav_icon"></i><i>English Club Officers</i></a></li>
+                            <li><a href="" class=" hvr-bounce-to-right"><i class="fa fa-user nav_icon"></i><i>Clubs Advisers</i></a></li>
 
-                            <li><a href="Science Club Officers" class=" hvr-bounce-to-right"><i class="fa fa-user nav_icon"></i><i>Science Club Officers</i></a></li>
-
-                            <li><a href="Art Club Officers" class=" hvr-bounce-to-right"><i class="fa fa-user nav_icon"></i><i>Art Club Officers</i></a></li>
-
-                             <li><a href="Theatre Club Officers" class=" hvr-bounce-to-right"><i class="fa fa-user nav_icon"></i><i>Theatre Club Officers</i></a></li>
-
-                              <li><a href="Charity Club Officers" class=" hvr-bounce-to-right"><i class="fa fa-user nav_icon"></i><i>Charity Club Officers</i></a></li>
-
-
-
+                            <li><a href="" class=" hvr-bounce-to-right"><i class="fa fa-user nav_icon"></i><i>Clubs Officers</i></a></li>
                     </ul>   
-
-
-
-
-                   
-                    <!-- <li>
-                        <a href="#" class=" hvr-bounce-to-right"><i class="fa fa-cog nav_icon"></i> <span class="nav-label">Settings</span><span class="fa arrow"></span></a>
-                        <ul class="nav nav-second-level">
-                            <li><a href="signin" class=" hvr-bounce-to-right"><i class="fa fa-sign-in nav_icon"></i>Signin</a></li>
-                            <li><a href="signup" class=" hvr-bounce-to-right"><i class="fa fa-sign-in nav_icon"></i>Singup</a></li>
-                        </ul>
-                    </li> -->
+                  </li>
                 </ul>
             </div>
             </div>
