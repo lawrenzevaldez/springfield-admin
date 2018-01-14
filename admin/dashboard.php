@@ -1,3 +1,22 @@
+<?php
+include_once 'config/db.php';
+// if(!$user->is_loggedin())
+// {
+//  $user->redirect('index.php');
+// }
+// Number of Clubs
+$sql = "SELECT count(*) FROM clubs"; 
+$result = $conn->prepare($sql); 
+$result->execute(); 
+$number_of_rows = $result->fetchColumn(); 
+// Number of Events
+$sql2 = "SELECT count(*) FROM events"; 
+$result2 = $conn->prepare($sql2); 
+$result2->execute(); 
+$number_of_rows2 = $result2->fetchColumn(); 
+
+?>
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -75,7 +94,7 @@
 				<div class="content-top-1">
 				<div class="col-md-6 top-content">
 					<h5>Number of Clubs</h5>
-					<label>6</label>
+					<label><?php echo $number_of_rows; ?></label>
 				</div>
 				<div class="col-md-6 top-content1">	   
 					<div id="demo-pie-2" class="pie-title-center" data-percent="50"> <span class="pie-value"></span> </div>
@@ -85,7 +104,7 @@
 				<div class="content-top-1">
 				<div class="col-md-6 top-content">
 					<h5>Number of Events</h5>
-					<label>6</label>
+					<label><?php echo $number_of_rows2; ?></label>
 				</div>
 				<div class="col-md-6 top-content1">	   
 					<div id="demo-pie-3" class="pie-title-center" data-percent="75"> <span class="pie-value"></span> </div>
