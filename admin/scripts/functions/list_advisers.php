@@ -1,15 +1,15 @@
 <?php
 
 require '../../config/db.php';
-include 'functions.php';
+include 'functions_advisers.php';
 
 $query = '';
 $output = array();
-$query .= "SELECT * FROM clubs ";
+$query .= "SELECT * FROM advisers ";
 if(isset($_POST["search"]["value"]))
 {
- $query .= 'WHERE club_name LIKE "%'.$_POST["search"]["value"].'%" ';
- $query .= 'OR club_info LIKE "%'.$_POST["search"]["value"].'%" ';
+ $query .= 'WHERE adviser_name LIKE "%'.$_POST["search"]["value"].'%" ';
+ $query .= 'OR club_assigned LIKE "%'.$_POST["search"]["value"].'%" ';
 }
 if(isset($_POST["order"]))
 {
@@ -17,7 +17,7 @@ if(isset($_POST["order"]))
 }
 else
 {
- $query .= 'ORDER BY c_id DESC ';
+ $query .= 'ORDER BY a_id DESC ';
 }
 if($_POST["length"] != -1)
 {
@@ -34,9 +34,9 @@ foreach ($result as $row)
 {
 	$sub_array = array();
 	$sub_array[] = $ctr;
- 	$sub_array[] = $row["club_name"];
- 	$sub_array[] = $row["club_info"];
- 	$sub_array[] = '<button type="button" name="update" id="'.$row["c_id"].'" class="btn btn-warning btn-xs update">Update</button>'. ' | ' .'<button type="button" name="delete" id="'.$row["c_id"].'" class="btn btn-danger btn-xs delete">Delete</button>';
+ 	$sub_array[] = $row["adviser_name"];
+ 	$sub_array[] = $row["club_assigned"];
+ 	$sub_array[] = '<button type="button" name="update" id="'.$row["a_id"].'" class="btn btn-warning btn-xs update">Update</button>'. ' | ' .'<button type="button" name="delete" id="'.$row["a_id"].'" class="btn btn-danger btn-xs delete">Delete</button>';
  	$data[] = $sub_array;
  	$ctr++;
 }

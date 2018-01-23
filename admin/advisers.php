@@ -1,7 +1,7 @@
 <?php
 
 //Modal Includes
-include "modals/modal_club.php";
+include "modals/modal_advisers.php";
 //
 
 
@@ -72,7 +72,7 @@ include "modals/modal_club.php";
 		    	<h2>
 				<a href="dashboard">Home</a>
 				<i class="fa fa-angle-right"></i>
-				<span>Clubs</span>
+				<span>Advisers</span>
 				</h2>
 		    </div>
 		<!--//banner-->
@@ -81,16 +81,16 @@ include "modals/modal_club.php";
 	
 
 			<div class="blank-page">
-				<button id="add_button" type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#addClub">New Club</button>
+				<button id="add_adviser" type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#addAdvisers">New Adviser</button>
 				<br>
 				<br>
 
-	        	<table class="table table-bordered datatable" id="club_data">
+	        	<table class="table table-bordered datatable" id="adviser_data">
 			    <thead>
 			      <tr>
 			        <th>#</th>
-			        <th>Club Name</th>
-			        <th>Club Info</th>
+			        <th>Adviser Name</th>
+			        <th>Club Assigned</th>
 			        <th>Action</th>
 			      </tr>
 			    </thead>
@@ -114,7 +114,7 @@ include "modals/modal_club.php";
 	<script src="js/ellipsis.js"> </script>
 	<script src="js/sweetalert.min.js"> </script>
 	<!--//scrolling js-->
-	<script type="text/javascript" src="scripts/script_club.js"></script>
+	<script type="text/javascript" src="scripts/script_advisers.js"></script>
 </body>
 </html>
 

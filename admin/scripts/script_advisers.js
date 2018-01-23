@@ -1,23 +1,20 @@
 
 	$(document).ready(function(){
 
-		CKEDITOR.replace( 'eventTextArea' );
-
-		$('#new_event').click(function()
+		$('#add_adviser').click(function()
 		{
-			$('#newEvent')[0].reset();
-			$('.modal-title').text("New Event");
+			$('#addAdviser')[0].reset();
+			$('.modal-title').text("Assign Adviser");
 			$('#action').val("Add");
-			CKEDITOR.instances.eventTextArea.setData("");
 			$('#operation').val("Add");
 		});
 
-		var dataTable = $('#event_data').DataTable({
+		var dataTable = $('#adviser_data').DataTable({
 			"processing":true,
 			"serverSide":true,
 			"order":[],
 			"ajax":{
-				url:"scripts/functions/list_events.php",
+				url:"scripts/functions/list_advisers.php",
 				type:"POST"
 			},
 			"columnDefs":[
@@ -28,15 +25,15 @@
 			],
 		});
 
-		$(document).on('submit', '#newEvent', function(event)
+		$(document).on('submit', '#addAdviser', function(event)
 		{
 			event.preventDefault();
-			var eventTitle = $('#eventTitle').val();
+			var advisername = $('#advisername').val();
 
-			if(eventTitle != '')
+			if(advisername != '')
 			{
 				$.ajax({
-					url:"scripts/functions/insert_event.php",
+					url:"scripts/functions/insert_advisers.php",
 					method: "POST",
 					data: new FormData(this),
 					contentType:false,
@@ -44,8 +41,8 @@
     				success:function(data)
     				{
     					swal("Success", data, "success");
-    					$('#newEvent')[0].reset();
-    					$('#newEvents').modal('hide');
+    					$('#addAdviser')[0].reset();
+    					$('#add_adviser').modal('hide');
     					dataTable.ajax.reload();
     				}
 				});
@@ -57,21 +54,19 @@
 		});
 
 		$(document).on('click', '.update', function(){
-			var event_id = $(this).attr("id");
+			var adviser_id = $(this).attr("id");
 			$.ajax({
-				url:"scripts/functions/fetch_events.php",
+				url:"scripts/functions/fetch_advisers.php",
 				method:"POST",
-				data:{event_id:event_id},
+				data:{adviser_id:adviser_id},
 				dataType:"JSON",
 				success:function(data)
 				{
-					$('#newEvents').modal('show');
-					$('#eventDate').val(data.event_date);
-					$('#eventTitle').val(data.event_title);
-					CKEDITOR.instances.eventTextArea.setData(data.description);
-					$('#eventStatus').val(data.status);
-					$('.modal-title').val('Edit Event');
-					$('#event_id').val(event_id);
+					$('#add_adviser').modal('show');
+					$('#advisername').val(data.adviser_name);
+					$('#clubassigned').val(data.club_assigned);
+					$('.modal-title').val('Edit Club Handled');
+					$('#adviser_id').val(adviser_id);
 					$('#action').val("Edit");
 					$('#operation').val("Edit");
 				}
@@ -79,7 +74,7 @@
 		});
 
 		$(document).on('click', '.delete', function(){
-			var event_id = $(this).attr("id");
+			var adviser_id = $(this).attr("id");
 			swal({
 			  title: "Are you sure?",
 			  text: "Your will not be able to recover this record!",
@@ -91,9 +86,9 @@
 			},
 			function(){
 			  $.ajax({
-					url:"scripts/functions/delete_event.php",
+					url:"scripts/functions/delete_advisers.php",
 					method:"POST",
-					data:{event_id:event_id},
+					data:{adviser_id:adviser_id},
 					success:function(data)
 					{
 	                    swal("Success", data,"success");

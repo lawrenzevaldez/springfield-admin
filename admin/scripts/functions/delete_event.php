@@ -1,6 +1,6 @@
 <?php
 require '../../config/db.php';
-include 'functions.php';
+include 'functions_events.php';
 
 if(isset($_POST["event_id"]))
 {

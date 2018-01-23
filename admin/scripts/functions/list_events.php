@@ -10,6 +10,7 @@ if(isset($_POST["search"]["value"]))
 {
  $query .= 'WHERE event_date LIKE "%'.$_POST["search"]["value"].'%" ';
  $query .= 'OR event_title LIKE "%'.$_POST["search"]["value"].'%" ';
+ $query .= 'OR description LIKE "%'.$_POST["search"]["value"].'%" ';
  $query .= 'OR status LIKE "%'.$_POST["search"]["value"].'%" ';
 }
 if(isset($_POST["order"]))
@@ -40,7 +41,7 @@ foreach ($result as $row)
  	$sub_array[] = $row["description"];
  	if($row["status"] == 1)
  	{
- 		$sub_array[] = "Show";
+ 		$sub_array[] = "Shown";
  	}
  	else
  	{

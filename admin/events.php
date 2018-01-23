@@ -4,7 +4,7 @@
 include "modals/modal_event.php";
 //
 
-
+	
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -24,6 +24,7 @@ include "modals/modal_event.php";
 <!-- Mainly scripts -->
 <script src="js/jquery.metisMenu.js"></script>
 <script src="js/jquery.slimscroll.min.js"></script>
+<link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
 <style type="text/css">
 	.td-limit {
     max-width: 70px;
@@ -81,7 +82,7 @@ include "modals/modal_event.php";
 	
 
 			<div class="blank-page">
-				<a href="createEvent"><button type="button" class="btn btn-primary pull-right">Add Event</button></a>
+				<button id="new_event" type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#newEvents">New Event</button>
 				<br>
 				<br>
 
@@ -111,13 +112,24 @@ include "modals/modal_event.php";
      
 <!---->
 <!--scrolling js-->
-	<script src="js/jquery.nicescroll.js"></script>
 	<script src="js/scripts.js"></script>
 	<script src="js/datatables.min.js"> </script>
 	<script src="js/ellipsis.js"> </script>
 	<script src="js/sweetalert.min.js"> </script>
 	<!--//scrolling js-->
 	<script type="text/javascript" src="scripts/script_event.js"></script>
+	<script type="text/javascript" src="js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
+    <script type="text/javascript">
+    	$('.form_date').datetimepicker({
+        weekStart: 1,
+        todayBtn:  1,
+		autoclose: 1,
+		todayHighlight: 1,
+		startView: 2,
+		minView: 2,
+		forceParse: 0
+    });
+    	</script>
 </body>
 </html>
 

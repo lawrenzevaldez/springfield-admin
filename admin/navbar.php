@@ -45,26 +45,21 @@
                         <a href="dashboard" class=" hvr-bounce-to-right"><i class="fa fa-dashboard nav_icon "></i><span class="nav-label">Dashboards</span> </a>
                     </li>
 
-                     <li>
-                        <a href="club" class=" hvr-bounce-to-right"><i class="fa fa-dashboard nav_icon "></i><span class="nav-label">Clubs</span> </a>
-                     </li>
-                    
-
-
-                       <li>
-                        <a href="events" class=" hvr-bounce-to-right"><i class="fa fa-dashboard nav_icon "></i><span class="nav-label">Events</span> </a>
-                    </li>
-
                     <li>
                         <a href="#" class=" hvr-bounce-to-right"><i class="fa fa-group nav_icon"></i> <span class="nav-label">Clubs</span><span class="fa arrow"></span></a>
                       <ul class="nav nav-second-level">
-                            <li><a href="" class=" hvr-bounce-to-right"> <i class="fa fa-user nav_icon"></i><i>View Clubs</i></a></li>
+                            <li><a href="club" class=" hvr-bounce-to-right"> <i class="fa fa-user nav_icon"></i><i>View Clubs</i></a></li>
 
-                            <li><a href="" class=" hvr-bounce-to-right"><i class="fa fa-user nav_icon"></i><i>Clubs Advisers</i></a></li>
+                            <li><a href="advisers" class=" hvr-bounce-to-right"><i class="fa fa-user nav_icon"></i><i>Clubs Advisers</i></a></li>
 
                             <li><a href="" class=" hvr-bounce-to-right"><i class="fa fa-user nav_icon"></i><i>Clubs Officers</i></a></li>
                     </ul>   
                   </li>
+
+                  <li>
+                        <a href="events" class=" hvr-bounce-to-right"><i class="fa fa-dashboard nav_icon "></i><span class="nav-label">Events</span> </a>
+                    </li>
+                  
                 </ul>
             </div>
             </div>
