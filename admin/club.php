@@ -1,5 +1,18 @@
 <?php
 
+session_start();
+require_once("config/class.user.php");
+$login = new USER();
+
+if($login->is_loggedin()!="")
+{
+	
+}
+else
+{
+	$login->redirect('index');
+}
+
 //Modal Includes
 include "modals/modal_club.php";
 //

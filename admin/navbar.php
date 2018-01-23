@@ -22,12 +22,9 @@
             <div class="drop-men" >
                 <ul class=" nav_1">
                     <li class="dropdown">
-                      <a href="#" class="dropdown-toggle dropdown-at" data-toggle="dropdown"><span class=" name-caret">Rackham<i class="caret"></i></span><img src="images/wo.jpg"></a>
+                      <a href="#" class="dropdown-toggle dropdown-at" data-toggle="dropdown"><span class=" name-caret">Admin<i class="caret"></i></span><img src="images/wo.jpg" style="width: 60px; height: 60px; border-left: 0;"></a>
                       <ul class="dropdown-menu " role="menu">
-                        <li><a href="profile"><i class="fa fa-user"></i>Edit Profile</a></li>
-                        <li><a href="inbox"><i class="fa fa-envelope"></i>Inbox</a></li>
-                        <li><a href="calendar"><i class="fa fa-calendar"></i>Calender</a></li>
-                        <li><a href="inbox"><i class="fa fa-clipboard"></i>Tasks</a></li>
+                        <li><a href="logout.php?logout=true"><i class="fa fa-logout"></i>Logout</a></li>
                       </ul>
                     </li>
                    

@@ -1,3 +1,31 @@
+<?php
+
+session_start();
+require_once("config/class.user.php");
+$login = new USER();
+
+if($login->is_loggedin()!="")
+{
+ $login->redirect('dashboard');
+}
+
+if(isset($_POST['submit']))
+{
+ $uname = $_POST['username'];
+ $upass = $_POST['password'];
+  
+ if($login->doLogin($uname,$upass))
+	{
+		$login->redirect('dashboard');
+	}
+	else
+	{
+		$error = "Wrong Details";
+	}
+}
+
+?>
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -26,14 +54,26 @@
 						<h1> <a href="index"><center> <font color="green"> Springfield </font> </center> </a></h1> 
 		<div class="login-bottom">
 			<h2>Login</h2>
-			<form action="dashboard" method="post">
+			<div id="error">
+        <?php
+			if(isset($error))
+			{
+				?>
+                <div class="alert alert-danger">
+                   <i class="glyphicon glyphicon-warning-sign"></i> &nbsp; <?php echo $error; ?> !
+                </div>
+                <?php
+			}
+		?>
+        </div>
+			<form action="#" method="post">
 			<div class="col-md-6">
 				<div class="login-mail">
-					<input type="text" placeholder="Username" required="">
+					<input type="text" name="username" placeholder="Username" required="">
 					<i class="fa fa-envelope"></i>
 				</div>
 				<div class="login-mail">
-					<input type="password" placeholder="Password" required="">
+					<input type="password" name="password" placeholder="Password" required="">
 					<i class="fa fa-lock"></i>
 				</div>
 
@@ -41,7 +81,7 @@
 			</div>
 			<div class="col-md-6 login-do">
 				<label class="hvr-shutter-in-horizontal login-sub">
-					<input type="submit" value="Login">
+					<input type="submit" name="submit" value="Login">
 
 					</label>
 

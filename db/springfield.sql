@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 23, 2018 at 12:47 PM
+-- Generation Time: Jan 23, 2018 at 01:27 PM
 -- Server version: 10.1.28-MariaDB
 -- PHP Version: 5.6.32
 
@@ -86,6 +86,27 @@ INSERT INTO `events` (`e_id`, `event_date`, `event_title`, `description`, `statu
 (9, '09 January 2018', 'Test', '<p>zxczxczxczxcasdadasdasdzc asdzxczxczxczxcasdadasdasdzc asdzxczxczxczxcasdadasdasdzc asdzxczxczxczxcasdadasdasdzc asdzxczxczxczxcasdadasdasdzc asdzxczxczxczxcasdadasdasdzc asdzxczxczxczxcasdadasdasdzc asdzxczxczxczxcasdadasdasdzc asdzxczxczxczxcasdadasdasdzc asdzxczxczxczxcasdadasdasdzc asd</p>\r\n', 1),
 (10, '28 January 2018', 'Math Club Event', '<p>asdasdasdasdasdasd</p>\r\n', 1);
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `user_id` int(11) NOT NULL,
+  `user_name` varchar(50) NOT NULL,
+  `user_password` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`user_id`, `user_name`, `user_password`) VALUES
+(1, 'admin', '$2y$10$tDtuaoPvKgxjTTbTizAPB.qNor8U2MplTj1fCz46oyCr51pAMGN6G'),
+(2, 'garces', '$2y$10$XoDRV9LRdjoJrhkBWHqgJe6.rbRjcsbKOcKAhTEWZfRpMiVEayM..'),
+(3, 'test', '$2y$10$7aLWBHN11BgSjZ0WAwLkVu9brftbeuCWIzSb5gpuK1Xb1hCoz5NX2');
+
 --
 -- Indexes for dumped tables
 --
@@ -109,6 +130,12 @@ ALTER TABLE `events`
   ADD PRIMARY KEY (`e_id`);
 
 --
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`user_id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -129,6 +156,12 @@ ALTER TABLE `clubs`
 --
 ALTER TABLE `events`
   MODIFY `e_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
