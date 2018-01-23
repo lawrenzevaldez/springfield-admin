@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 14, 2018 at 09:27 AM
+-- Generation Time: Jan 23, 2018 at 12:47 PM
 -- Server version: 10.1.28-MariaDB
 -- PHP Version: 5.6.32
 
@@ -27,15 +27,40 @@ USE `springfield`;
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `advisers`
+--
+
+CREATE TABLE `advisers` (
+  `a_id` int(11) NOT NULL,
+  `adviser_name` varchar(50) NOT NULL,
+  `club_assigned` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `advisers`
+--
+
+INSERT INTO `advisers` (`a_id`, `adviser_name`, `club_assigned`) VALUES
+(1, 'Tdetasdasd', 'na');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `clubs`
 --
 
 CREATE TABLE `clubs` (
   `c_id` int(11) NOT NULL,
   `club_name` varchar(20) NOT NULL,
-  `club_info` text NOT NULL,
-  `club_president` varchar(25) NOT NULL
+  `club_info` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `clubs`
+--
+
+INSERT INTO `clubs` (`c_id`, `club_name`, `club_info`) VALUES
+(2, 'asdasd', '<p>asdasd</p>\r\n');
 
 -- --------------------------------------------------------
 
@@ -56,14 +81,20 @@ CREATE TABLE `events` (
 --
 
 INSERT INTO `events` (`e_id`, `event_date`, `event_title`, `description`, `status`) VALUES
-(1, '16 January 2018', 'Test Title', '<p>Test Description</p>\n', 1),
+(1, '16 January 2018', 'Test Title', '<p>Test Description</p>\r\n', 0),
 (2, '18 January 2018', 'Test Title', '<p>Test Description</p>\n', 1),
-(7, '', '', '<p>11234</p>\n', 1),
-(8, '', '', '<p>dasdasdaszxczx</p>\n', 1);
+(9, '09 January 2018', 'Test', '<p>zxczxczxczxcasdadasdasdzc asdzxczxczxczxcasdadasdasdzc asdzxczxczxczxcasdadasdasdzc asdzxczxczxczxcasdadasdasdzc asdzxczxczxczxcasdadasdasdzc asdzxczxczxczxcasdadasdasdzc asdzxczxczxczxcasdadasdasdzc asdzxczxczxczxcasdadasdasdzc asdzxczxczxczxcasdadasdasdzc asdzxczxczxczxcasdadasdasdzc asd</p>\r\n', 1),
+(10, '28 January 2018', 'Math Club Event', '<p>asdasdasdasdasdasd</p>\r\n', 1);
 
 --
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `advisers`
+--
+ALTER TABLE `advisers`
+  ADD PRIMARY KEY (`a_id`);
 
 --
 -- Indexes for table `clubs`
@@ -82,16 +113,22 @@ ALTER TABLE `events`
 --
 
 --
+-- AUTO_INCREMENT for table `advisers`
+--
+ALTER TABLE `advisers`
+  MODIFY `a_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `clubs`
 --
 ALTER TABLE `clubs`
-  MODIFY `c_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `c_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `events`
 --
 ALTER TABLE `events`
-  MODIFY `e_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `e_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
