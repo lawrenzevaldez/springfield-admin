@@ -47,7 +47,7 @@ foreach ($result as $row)
  	{
  		$sub_array[] = "Hidden";
  	}
- 	$sub_array[] = '<button type="button" name="update" id="'.$row["e_id"].'" class="btn btn-warning btn-xs update">Update</button>'. ' | ' .'<button type="button" name="delete" id="'.$row["e_id"].'" class="btn btn-danger btn-xs delete">Delete</button>';
+ 	$sub_array[] = '<button type="button" name="view" id="'.$row["e_id"].'" class="btn btn-primary btn-xs view">View</button>'. ' | <button type="button" name="update" id="'.$row["e_id"].'" class="btn btn-warning btn-xs update">Update</button>'. ' | ' .'<button type="button" name="delete" id="'.$row["e_id"].'" class="btn btn-danger btn-xs delete">Delete</button>';
  	$data[] = $sub_array;
  	$ctr++;
 }

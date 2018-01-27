@@ -12,7 +12,7 @@ if(isset($_POST["advisers_id"]))
     );
     if(!empty($result))
     {
-      echo 'Data Deleted';
+      echo 'Adviser Removed';
     }
 }
 

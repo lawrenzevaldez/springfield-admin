@@ -22,7 +22,7 @@ include "modals/modal_club.php";
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Minimal an Admin Panel Category Flat Bootstrap Responsive Website Template | Blank :: w3layouts</title>
+<title>Clubs - Spring Field | Spring Field</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -94,7 +94,7 @@ include "modals/modal_club.php";
 	
 
 			<div class="blank-page">
-				<button id="add_button" type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#addClub">New Club</button>
+				<button id="add_button" type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#addClub"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i> New Club</button>
 				<br>
 				<br>
 
@@ -113,8 +113,9 @@ include "modals/modal_club.php";
 	
 	<!--//faq-->
 		<!---->
-<div class="copy">
-            <p> &copy; 2016 Minimal. All Rights Reserved | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>	    </div>
+		<?php
+		 include "footer.php";
+		?>
 		</div>
 		</div>
 		<div class="clearfix"> </div>

@@ -15,7 +15,7 @@ if(isset($_POST["operation"]))
       );
       if(!empty($result))
       {
-        echo 'Data Inserted';
+        echo 'Club Added';
       }
     }
     if($_POST["operation"] == "Edit")
@@ -30,7 +30,7 @@ if(isset($_POST["operation"]))
         );
         if(!empty($result))
         {
-          echo 'Data Updated';
+          echo 'Club Info Updated';
         }
       }
     }

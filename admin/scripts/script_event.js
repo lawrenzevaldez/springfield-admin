@@ -56,6 +56,30 @@
 			}
 		});
 
+		$(document).on('click', '.view', function(){
+			var event_id = $(this).attr("id");
+			$.ajax({
+				url:"scripts/functions/fetch_events.php",
+				method:"POST",
+				data:{event_id:event_id},
+				dataType:"JSON",
+				success:function(data)
+				{
+					$('#viewEvents').modal('show');
+					$('.modal-title').html(data.event_title);
+					$('#viewEventDate').html("Date: " +data.event_date);
+					$('#viewEventContent').html(data.description);
+					if (data.status == 1) {
+						$('#viewEventStatus').html("Status: Shown");
+					}
+					else
+					{
+						$('#viewEventStatus').html("Status: Hidden");
+					}
+				}
+			});
+		});
+
 		$(document).on('click', '.update', function(){
 			var event_id = $(this).attr("id");
 			$.ajax({

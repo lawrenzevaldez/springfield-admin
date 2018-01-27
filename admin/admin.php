@@ -14,16 +14,15 @@ else
 }
 
 //Modal Includes
-include "modals/modal_event.php";
-include "modals/modal_viewevent.php";
+include "modals/modal_club.php";
 //
 
-	
+
 ?>
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Events - Spring Field | Spring Field</title>
+<title>Admin - Spring Field | Spring Field</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -38,7 +37,6 @@ include "modals/modal_viewevent.php";
 <!-- Mainly scripts -->
 <script src="js/jquery.metisMenu.js"></script>
 <script src="js/jquery.slimscroll.min.js"></script>
-<link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet" media="screen">
 <style type="text/css">
 	.td-limit {
     max-width: 70px;
@@ -87,7 +85,7 @@ include "modals/modal_viewevent.php";
 		    	<h2>
 				<a href="dashboard">Home</a>
 				<i class="fa fa-angle-right"></i>
-				<span>Events</span>
+				<span>Admin Accounts</span>
 				</h2>
 		    </div>
 		<!--//banner-->
@@ -96,22 +94,7 @@ include "modals/modal_viewevent.php";
 	
 
 			<div class="blank-page">
-				<button id="new_event" type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#newEvents"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i> New Event</button>
-				<br>
-				<br>
-
-	        	<table class="table table-bordered datatable" id="event_data">
-			    <thead>
-			      <tr>
-			        <th>#</th>
-			        <th>Event Date</th>
-			        <th>Event Title</th>
-			        <th>Event Description</th>
-			        <th>Status</th>
-			        <th>Action</th>
-			      </tr>
-			    </thead>
-			  </table>
+				
 	        </div>
 	       </div>
 	
@@ -132,19 +115,7 @@ include "modals/modal_viewevent.php";
 	<script src="js/ellipsis.js"> </script>
 	<script src="js/sweetalert.min.js"> </script>
 	<!--//scrolling js-->
-	<script type="text/javascript" src="scripts/script_event.js"></script>
-	<script type="text/javascript" src="js/bootstrap-datetimepicker.js" charset="UTF-8"></script>
-    <script type="text/javascript">
-    	$('.form_date').datetimepicker({
-        weekStart: 1,
-        todayBtn:  1,
-		autoclose: 1,
-		todayHighlight: 1,
-		startView: 2,
-		minView: 2,
-		forceParse: 0
-    });
-    	</script>
+	<script type="text/javascript" src="scripts/script_club.js"></script>
 </body>
 </html>
 

@@ -95,7 +95,7 @@ if(isset($_POST['submit']))
 	</div>
 		<!---->
 <div class="copy-right">
-            <p>Copyright</a> </p>	    </div>  
+            <p>&copy; 2018 Springfield School of Novaliches. All Rights Reserved </a> </p>	    </div>  
 <!---->
 <!--scrolling js-->
 	<script src="js/jquery.nicescroll.js"></script>

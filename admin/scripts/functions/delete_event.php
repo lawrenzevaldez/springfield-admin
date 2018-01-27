@@ -12,7 +12,7 @@ if(isset($_POST["event_id"]))
     );
     if(!empty($result))
     {
-      echo 'Data Deleted';
+      echo 'Event Deleted';
     }
 }
 

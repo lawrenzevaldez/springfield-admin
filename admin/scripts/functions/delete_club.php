@@ -12,7 +12,7 @@ if(isset($_POST["club_id"]))
     );
     if(!empty($result))
     {
-      echo 'Data Deleted';
+      echo 'Club Deleted';
     }
 }
 

@@ -1,9 +1,13 @@
 <?php
 include_once 'config/db.php';
-// if(!$user->is_loggedin())
-// {
-//  $user->redirect('index.php');
-// }
+if($login->is_loggedin()!="")
+{
+	
+}
+else
+{
+	$login->redirect('index');
+}
 // Number of Clubs
 $sql = "SELECT count(*) FROM clubs"; 
 $result = $conn->prepare($sql); 
@@ -20,7 +24,7 @@ $number_of_rows2 = $result2->fetchColumn();
 <!DOCTYPE HTML>
 <html>
 <head>
-<title> An Android based Clubs and Events monitoring with QR code for Spring Field School of Novaliches</title>
+<title>Dashboard - Spring Field | Spring Field</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -315,9 +319,9 @@ $number_of_rows2 = $result2->fetchColumn();
 			</div>
 			<div class="clearfix"> </div>
 		</div>
-<div class="copy">
-            <p> &copy; 2016 Minimal. All Rights Reserved | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>
-	    </div>
+		<?php
+		 include "footer.php";
+		?>
 		</div>
 		<div class="clearfix"> </div>
        </div>

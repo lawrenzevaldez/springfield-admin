@@ -56,6 +56,17 @@
                   <li>
                         <a href="events" class=" hvr-bounce-to-right"><i class="fa fa-dashboard nav_icon "></i><span class="nav-label">Events</span> </a>
                     </li>
+                    <li>
+                        <a href="#" class=" hvr-bounce-to-right"><i class="fa fa-group nav_icon"></i> <span class="nav-label">Lists</span><span class="fa arrow"></span></a>
+                      <ul class="nav nav-second-level">
+                            <li><a href="#" class=" hvr-bounce-to-right"> <i class="fa fa-user nav_icon"></i><i>Students</i></a></li>
+
+                            <li><a href="#" class=" hvr-bounce-to-right"><i class="fa fa-user nav_icon"></i><i>Teachers</i></a></li>
+                    </ul>   
+                  </li>
+                  <li>
+                        <a href="admin" class=" hvr-bounce-to-right"><i class="fa fa-dashboard nav_icon "></i><span class="nav-label">Admin Accounts</span> </a>
+                    </li>
                   
                 </ul>
             </div>

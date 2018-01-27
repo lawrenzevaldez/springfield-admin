@@ -22,7 +22,7 @@ include "modals/modal_advisers.php";
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Minimal an Admin Panel Category Flat Bootstrap Responsive Website Template | Blank :: w3layouts</title>
+<title>Advisers - Spring Field | Spring Field</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -94,7 +94,7 @@ include "modals/modal_advisers.php";
 	
 
 			<div class="blank-page">
-				<button id="add_adviser" type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#addAdvisers">New Adviser</button>
+				<button id="add_adviser" type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#addAdvisers"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i> New Adviser</button>
 				<br>
 				<br>
 
@@ -102,8 +102,8 @@ include "modals/modal_advisers.php";
 			    <thead>
 			      <tr>
 			        <th>#</th>
-			        <th>Adviser Name</th>
-			        <th>Club Assigned</th>
+			        <th>Club Name</th>
+			        <th>Club Info</th>
 			        <th>Action</th>
 			      </tr>
 			    </thead>
@@ -113,8 +113,9 @@ include "modals/modal_advisers.php";
 	
 	<!--//faq-->
 		<!---->
-<div class="copy">
-            <p> &copy; 2016 Minimal. All Rights Reserved | Design by <a href="http://w3layouts.com/" target="_blank">W3layouts</a> </p>	    </div>
+		<?php
+		 include "footer.php";
+		?>
 		</div>
 		</div>
 		<div class="clearfix"> </div>

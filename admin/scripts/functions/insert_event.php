@@ -17,7 +17,7 @@ if(isset($_POST["operation"]))
       );
       if(!empty($result))
       {
-        echo 'Data Inserted';
+        echo 'Event Added';
       }
     }
     if($_POST["operation"] == "Edit")
@@ -34,7 +34,7 @@ if(isset($_POST["operation"]))
         );
         if(!empty($result))
         {
-          echo 'Data Updated';
+          echo 'Event Info Updated';
         }
       }
     }
