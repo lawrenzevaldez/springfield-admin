@@ -1,5 +1,8 @@
 <?php
 include_once 'config/db.php';
+session_start();
+require_once("config/class.user.php");
+$login = new USER();
 if($login->is_loggedin()!="")
 {
 	
