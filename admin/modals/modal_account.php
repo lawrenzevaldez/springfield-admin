@@ -1,25 +1,23 @@
 <!-- Modal -->
-<div id="addLaw" class="modal fade" role="dialog">
+<div id="addAccount" class="modal fade" role="dialog">
   <div class="modal-dialog">
-    <form method="POST" id="add_law" enctype="multipart/form-data">
+    <form method="POST" id="add_account" enctype="multipart/form-data">
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Add New Rules & Regulations</h4>
+          <h4 class="modal-title">Add New Account</h4>
         </div>
         <div class="modal-body">
-          <label>Club Name</label>
-          <select id="clubname_law" name="clubname_law" class="form-control" required="">
-              <option value="na" selected="">None</option>
-            </select>
+          <label>Username</label>
+          <input type="text" name="username" id="username" class="form-control">
           <br>
-          <label>Rule:</label>
-          <input type="text" name="lawname" id="lawname" class="form-control">
+          <label>Password</label>
+          <input type="password" name="password" id="password" class="form-control">
           <br>
         </div>
         <div class="modal-footer">
-          <input type="hidden" name="law_id" id="law_id">
+          <input type="hidden" name="account_id" id="account_id">
           <input type="hidden" name="operation" id="operation">
           <input type="submit" name="action" id="action" class="btn btn-success" value="Add">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

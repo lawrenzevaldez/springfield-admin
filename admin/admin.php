@@ -14,7 +14,7 @@ else
 }
 
 //Modal Includes
-include "modals/modal_club.php";
+include "modals/modal_account.php";
 //
 
 
@@ -94,7 +94,22 @@ include "modals/modal_club.php";
 	
 
 			<div class="blank-page">
-				
+
+				<div class="blank-page">
+				<button id="add_accounts" type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#addAccount"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i> New Account</button>
+				<br>
+				<br>
+
+	        	<table class="table table-bordered datatable" id="account_data">
+			    <thead>
+			      <tr>
+			        <th>#</th>
+			        <th>Username</th>
+			        <th>Action</th>
+			      </tr>
+			    </thead>
+			  </table>
+	        </div>
 	        </div>
 	       </div>
 	
@@ -115,7 +130,7 @@ include "modals/modal_club.php";
 	<script src="js/ellipsis.js"> </script>
 	<script src="js/sweetalert.min.js"> </script>
 	<!--//scrolling js-->
-	<script type="text/javascript" src="scripts/script_club.js"></script>
+	<script type="text/javascript" src="scripts/script_account.js"></script>
 </body>
 </html>
 
