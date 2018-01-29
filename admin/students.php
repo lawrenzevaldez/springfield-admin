@@ -14,7 +14,7 @@ else
 }
 
 //Modal Includes
-include "modals/modal_advisers.php";
+include "modals/modal_students.php";
 //
 
 
@@ -22,7 +22,7 @@ include "modals/modal_advisers.php";
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Advisers - Spring Field | Spring Field</title>
+<title>Students - Spring Field | Spring Field</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
@@ -80,12 +80,12 @@ include "modals/modal_advisers.php";
 		 <div id="page-wrapper" class="gray-bg dashbard-1">
        <div class="content-main">
  
- 	<!--banner-->		
+ 	<!--banner-->	
 		     <div class="banner">
 		    	<h2>
 				<a href="dashboard">Home</a>
 				<i class="fa fa-angle-right"></i>
-				<span>Advisers</span>
+				<span>Students</span>
 				</h2>
 		    </div>
 		<!--//banner-->
@@ -94,16 +94,19 @@ include "modals/modal_advisers.php";
 	
 
 			<div class="blank-page">
-				<button id="add_adviser" type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#addAdvisers"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i> New Adviser</button>
+				<button id="add_student" type="button" class="btn btn-primary pull-right" data-toggle="modal" data-target="#addStudents"><i class="fa fa-plus-circle fa-lg" aria-hidden="true"></i> New Student</button>
 				<br>
 				<br>
 
-	        	<table class="table table-bordered datatable" id="adviser_data">
+	        	<table class="table table-bordered datatable" id="student_data">
 			    <thead>
 			      <tr>
-			        <th>#</th>
-			        <th>Adviser Name</th>
-			        <th>Club Handled</th>
+			        <th>Student Number</th>
+			        <th>First Name</th>
+			        <th>Middle Name</th>
+			        <th>Last Name</th>
+			        <th>Grade</th>
+			        <th>Club</th>
 			        <th>Action</th>
 			      </tr>
 			    </thead>
@@ -128,7 +131,7 @@ include "modals/modal_advisers.php";
 	<script src="js/ellipsis.js"> </script>
 	<script src="js/sweetalert.min.js"> </script>
 	<!--//scrolling js-->
-	<script type="text/javascript" src="scripts/script_advisers.js"></script>
+	<script type="text/javascript" src="scripts/script_students.js"></script>
 </body>
 </html>
 

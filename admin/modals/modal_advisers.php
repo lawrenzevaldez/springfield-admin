@@ -11,12 +11,36 @@
         <div class="modal-body">
           <label>Adviser Name:</label>
           <select class="form-control" name="advisername" id="advisername" required="">
-            <option value="" disabled="">-Select-</option>
+            <option value="" selected="">-Select-</option>
+            <?php
+              include 'config/db.php';
+
+              $query = "SELECT * FROM users";
+              $result = $conn->query($query);
+              $result->setFetchMode(PDO::FETCH_ASSOC);
+              while ($rows = $result->fetch()) 
+              {
+                echo '<option value="'.$rows['user_name'].'">'.$rows['user_name'].'</option>';
+              }
+
+              ?>
           </select>
           <br>
           <label>Club Assgined:</label>
             <select id="clubassigned" name="clubassigned" class="form-control" required="">
-              <option value="na" selected="">None</option>
+              <option value="na" selected="" disabled="">-Select-</option>
+              <?php
+              include 'config/db.php';
+
+              $query = "SELECT * FROM clubs";
+              $result = $conn->query($query);
+              $result->setFetchMode(PDO::FETCH_ASSOC);
+              while ($rows = $result->fetch()) 
+              {
+                echo '<option value="'.$rows['club_name'].'">'.$rows['club_name'].'</option>';
+              }
+
+              ?>
             </select>
           <br>
         </div>

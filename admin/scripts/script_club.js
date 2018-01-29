@@ -25,6 +25,9 @@
 				"targets":2,
 				render: $.fn.dataTable.render.ellipsis(20)
 			},
+			{
+				"targets":2,
+			}
 			],
 		});
 

@@ -1,39 +1,33 @@
 
 	$(document).ready(function(){
 
-		$('#add_adviser').click(function()
+		$('#add_student').click(function()
 		{
-			$('#addAdviser')[0].reset();
-			$('.modal-title').text("Assign Adviser");
+			$('#addStudent')[0].reset();
+			$('.modal-title').text("Add New Student");
 			$('#action').val("Add");
 			$('#operation').val("Add");
 		});
 
-		var dataTable = $('#adviser_data').DataTable({
+		var dataTable = $('#student_data').DataTable({
 			"processing":true,
 			"serverSide":true,
 			"order":[],
 			"ajax":{
-				url:"scripts/functions/list_advisers.php",
+				url:"scripts/functions/list_students.php",
 				type:"POST"
 			},
-			"columnDefs":[
-			{
-				"targets":2,
-				render: $.fn.dataTable.render.ellipsis(20)
-			},
-			],
 		});
 
-		$(document).on('submit', '#addAdviser', function(event)
+		$(document).on('submit', '#addStudent', function(event)
 		{
 			event.preventDefault();
-			var advisername = $('#advisername').val();
+			var studentNumber = $('#studentNumber').val();
 
-			if(advisername != '')
+			if(studentNumber != '')
 			{
 				$.ajax({
-					url:"scripts/functions/insert_advisers.php",
+					url:"scripts/functions/insert_students.php",
 					method: "POST",
 					data: new FormData(this),
 					contentType:false,
@@ -41,8 +35,8 @@
     				success:function(data)
     				{
     					swal("Success", data, "success");
-    					$('#addAdviser')[0].reset();
-    					$('#addAdvisers').modal('hide');
+    					$('#addStudent')[0].reset();
+    					$('#addStudents').modal('hide');
     					dataTable.ajax.reload();
     				}
 				});
@@ -56,27 +50,30 @@
 
 
 		$(document).on('click', '.update', function(){
-			var adviser_id = $(this).attr("id");
+			var student_id = $(this).attr("id");
 			$.ajax({
-				url:"scripts/functions/fetch_advisers.php",
+				url:"scripts/functions/fetch_students.php",
 				method:"POST",
-				data:{adviser_id:adviser_id},
+				data:{student_id:student_id},
 				dataType:"JSON",
 				success:function(data)
 				{
-					$('#addAdvisers').modal('show');
-					$('#advisername').val(data.adviser_name);
+					$('#addStudents').modal('show');
+					$('#firstName').val(data.first_name);
+					$('#middleName').val(data.middle_name);
+					$('#lastName').val(data.last_name);
+					$('#schoolGrade').val(data.school_grade);
 					$('#clubassigned').val(data.club_assigned);
-					$('.modal-title').val('Edit Club Handled');
-					$('#adviser_id').val(adviser_id);
-					$('#action').val("Edit");
+					$('.modal-title').val('Update Student Info');
+					$('#student_id').val(student_id);
+					$('#action').val("Update");
 					$('#operation').val("Edit");
 				}
 			});
 		});
 
 		$(document).on('click', '.delete', function(){
-			var adviser_id = $(this).attr("id");
+			var student_id = $(this).attr("id");
 			swal({
 			  title: "Are you sure?",
 			  text: "Your will not be able to recover this record!",
@@ -88,9 +85,9 @@
 			},
 			function(){
 			  $.ajax({
-					url:"scripts/functions/delete_advisers.php",
+					url:"scripts/functions/delete_students.php",
 					method:"POST",
-					data:{adviser_id:adviser_id},
+					data:{student_id:student_id},
 					success:function(data)
 					{
 	                    swal("Success", data,"success");
