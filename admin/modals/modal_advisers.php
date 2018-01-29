@@ -10,7 +10,9 @@
         </div>
         <div class="modal-body">
           <label>Adviser Name:</label>
-          <input type="text" name="advisername" id="advisername" class="form-control">
+          <select class="form-control" name="advisername" id="advisername" required="">
+            <option value="" disabled="">-Select-</option>
+          </select>
           <br>
           <label>Club Assgined:</label>
             <select id="clubassigned" name="clubassigned" class="form-control" required="">

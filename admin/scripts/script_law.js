@@ -1,39 +1,39 @@
 
 	$(document).ready(function(){
 
-		$('#add_adviser').click(function()
+		$('#add_laws').click(function()
 		{
-			$('#addAdviser')[0].reset();
-			$('.modal-title').text("Assign Adviser");
+			$('#add_law')[0].reset();
+			$('.modal-title').text("Add New Rules & Regulations");
 			$('#action').val("Add");
 			$('#operation').val("Add");
 		});
 
-		var dataTable = $('#adviser_data').DataTable({
+		var dataTable = $('#law_data').DataTable({
 			"processing":true,
 			"serverSide":true,
 			"order":[],
 			"ajax":{
-				url:"scripts/functions/list_advisers.php",
+				url:"scripts/functions/list_law.php",
 				type:"POST"
 			},
 			"columnDefs":[
 			{
-				"targets":2,
-				render: $.fn.dataTable.render.ellipsis(20)
+				"targets":1,
+				render: $.fn.dataTable.render.ellipsis(25)
 			},
 			],
 		});
 
-		$(document).on('submit', '#addAdviser', function(event)
+		$(document).on('submit', '#add_law', function(event)
 		{
 			event.preventDefault();
-			var advisername = $('#advisername').val();
+			var lawname = $('#lawname').val();
 
-			if(advisername != '')
+			if(lawname != '')
 			{
 				$.ajax({
-					url:"scripts/functions/insert_advisers.php",
+					url:"scripts/functions/insert_law.php",
 					method: "POST",
 					data: new FormData(this),
 					contentType:false,
@@ -41,8 +41,8 @@
     				success:function(data)
     				{
     					swal("Success", data, "success");
-    					$('#addAdviser')[0].reset();
-    					$('#addAdvisers').modal('hide');
+    					$('#add_law')[0].reset();
+    					$('#addLaw').modal('hide');
     					dataTable.ajax.reload();
     				}
 				});
@@ -53,42 +53,27 @@
 			}
 		});
 
-
-
 		$(document).on('click', '.update', function(){
-			var adviser_id = $(this).attr("id");
+			var law_id = $(this).attr("id");
 			$.ajax({
-				url:"scripts/functions/fetch_advisers.php",
+				url:"scripts/functions/fetch_law.php",
 				method:"POST",
-				data:{adviser_id:adviser_id},
+				data:{law_id:law_id},
 				dataType:"JSON",
 				success:function(data)
 				{
-					$('#addAdvisers').modal('show');
-					$('#advisername').val(data.adviser_name);
-					$('#clubassigned').val(data.club_assigned);
-					$('.modal-title').val('Edit Club Handled');
-					$('#adviser_id').val(adviser_id);
+					$('#addLaw').modal('show');
+					$('#lawname').val(data.laws);
+					$('.modal-title').val('Edit Rules & Regulations');
+					$('#law_id').val(law_id);
 					$('#action').val("Edit");
 					$('#operation').val("Edit");
 				}
 			});
 		});
 
-		$(document).on('blur', '#advisername', function(){
-			$.ajax({
-				url:"scripts/functions/fetch-advisers.php",
-				method:"POST",
-				dataType:"JSON",
-				success:function(data)
-				{
-					$('#advisername').val(data);
-				}
-			});
-		});
-
 		$(document).on('click', '.delete', function(){
-			var adviser_id = $(this).attr("id");
+			var law_id = $(this).attr("id");
 			swal({
 			  title: "Are you sure?",
 			  text: "Your will not be able to recover this record!",
@@ -100,9 +85,9 @@
 			},
 			function(){
 			  $.ajax({
-					url:"scripts/functions/delete_advisers.php",
+					url:"scripts/functions/delete_law.php",
 					method:"POST",
-					data:{adviser_id:adviser_id},
+					data:{law_id:law_id},
 					success:function(data)
 					{
 	                    swal("Success", data,"success");

@@ -2,10 +2,10 @@
 require '../../config/db.php';
 include 'functions_advisers.php';
 
-if(isset($_POST["advisers_id"]))
+if(isset($_POST["adviser_id"]))
 {
   $output = array();
-  $statement = $conn->prepare("SELECT * FROM advisers WHERE a_id = '".$_POST["advisers_id"]."' LIMIT 1");
+  $statement = $conn->prepare("SELECT * FROM advisers WHERE a_id = '".$_POST["adviser_id"]."' LIMIT 1");
   $statement->execute();
   $result = $statement->fetchAll();
   foreach($result as $row)

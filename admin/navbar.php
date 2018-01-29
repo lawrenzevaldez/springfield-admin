@@ -65,6 +65,9 @@
                     </ul>   
                   </li>
                   <li>
+                        <a href="rules" class=" hvr-bounce-to-right"><i class="fa fa-dashboard nav_icon "></i><span class="nav-label">By Laws</span> </a>
+                    </li>
+                  <li>
                         <a href="admin" class=" hvr-bounce-to-right"><i class="fa fa-dashboard nav_icon "></i><span class="nav-label">Admin Accounts</span> </a>
                     </li>
                   
