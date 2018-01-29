@@ -11,7 +11,19 @@
         <div class="modal-body">
           <label>Club Name</label>
           <select id="clubname_law" name="clubname_law" class="form-control" required="">
-              <option value="na" selected="">None</option>
+              <option value="na" selected="" disabled="">-Select-</option>
+              <?php
+              include 'config/db.php';
+
+              $query = "SELECT * FROM clubs";
+              $result = $conn->query($query);
+              $result->setFetchMode(PDO::FETCH_ASSOC);
+              while ($rows = $result->fetch()) 
+              {
+                echo '<option value="'.$rows['club_name'].'">'.$rows['club_name'].'</option>';
+              }
+
+              ?>
             </select>
           <br>
           <label>Rule:</label>
