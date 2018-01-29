@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 29, 2018 at 05:36 PM
+-- Generation Time: Jan 29, 2018 at 06:11 PM
 -- Server version: 10.1.30-MariaDB
 -- PHP Version: 5.6.33
 
@@ -45,13 +45,6 @@ CREATE TABLE `clubs` (
   `club_name` varchar(20) NOT NULL,
   `club_info` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `clubs`
---
-
-INSERT INTO `clubs` (`c_id`, `club_name`, `club_info`) VALUES
-(3, 'zxcz', '<p>xczxczxc</p>\r\n');
 
 -- --------------------------------------------------------
 
@@ -97,9 +90,9 @@ CREATE TABLE `laws` (
 
 CREATE TABLE `officers` (
   `o_id` int(11) NOT NULL,
+  `full_name` varchar(255) NOT NULL,
   `club_name` varchar(20) NOT NULL,
-  `club_adviser` varchar(50) NOT NULL,
-  `officer_name` varchar(50) NOT NULL
+  `club_position` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
@@ -116,6 +109,13 @@ CREATE TABLE `students` (
   `school_grade` varchar(25) NOT NULL,
   `club_assigned` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `students`
+--
+
+INSERT INTO `students` (`student_number`, `first_name`, `middle_name`, `last_name`, `school_grade`, `club_assigned`) VALUES
+(110003, 'Raymond', 'Test', 'Garces', '11', 'zxcz');
 
 -- --------------------------------------------------------
 
@@ -186,7 +186,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `advisers`
 --
 ALTER TABLE `advisers`
-  MODIFY `a_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `a_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT for table `clubs`
@@ -204,13 +204,13 @@ ALTER TABLE `events`
 -- AUTO_INCREMENT for table `officers`
 --
 ALTER TABLE `officers`
-  MODIFY `o_id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `o_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `students`
 --
 ALTER TABLE `students`
-  MODIFY `student_number` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=110003;
+  MODIFY `student_number` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=110004;
 
 --
 -- AUTO_INCREMENT for table `users`
