@@ -102,6 +102,7 @@ include "modals/modal_law.php";
 			    <thead>
 			      <tr>
 			        <th>#</th>
+			        <th>Club Name</th>
 			        <th>Rules</th>
 			        <th>Action</th>
 			      </tr>

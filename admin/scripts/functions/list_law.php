@@ -9,6 +9,7 @@ $query .= "SELECT * FROM laws ";
 if(isset($_POST["search"]["value"]))
 {
  $query .= 'WHERE laws LIKE "%'.$_POST["search"]["value"].'%" ';
+ $query .= 'OR club_name LIKE "%'.$_POST["search"]["value"].'%" ';
 }
 if(isset($_POST["order"]))
 {
@@ -33,6 +34,7 @@ foreach ($result as $row)
 {
 	$sub_array = array();
 	$sub_array[] = $ctr;
+	$sub_array[] = $row["club_name"];
  	$sub_array[] = $row["laws"];
  	$sub_array[] = '<button type="button" name="update" id="'.$row["l_id"].'" class="btn btn-warning btn-xs update">Update</button>'. ' | ' .'<button type="button" name="delete" id="'.$row["l_id"].'" class="btn btn-danger btn-xs delete">Delete</button>';
  	$data[] = $sub_array;
