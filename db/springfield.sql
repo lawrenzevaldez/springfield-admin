@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 23, 2018 at 01:27 PM
--- Server version: 10.1.28-MariaDB
--- PHP Version: 5.6.32
+-- Generation Time: Jan 29, 2018 at 04:06 PM
+-- Server version: 10.1.30-MariaDB
+-- PHP Version: 5.6.33
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -21,8 +21,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `springfield`
 --
-CREATE DATABASE IF NOT EXISTS `springfield` DEFAULT CHARACTER SET latin1 COLLATE latin1_swedish_ci;
-USE `springfield`;
 
 -- --------------------------------------------------------
 
@@ -36,13 +34,6 @@ CREATE TABLE `advisers` (
   `club_assigned` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `advisers`
---
-
-INSERT INTO `advisers` (`a_id`, `adviser_name`, `club_assigned`) VALUES
-(1, 'Tdetasdasd', 'na');
-
 -- --------------------------------------------------------
 
 --
@@ -54,13 +45,6 @@ CREATE TABLE `clubs` (
   `club_name` varchar(20) NOT NULL,
   `club_info` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `clubs`
---
-
-INSERT INTO `clubs` (`c_id`, `club_name`, `club_info`) VALUES
-(2, 'asdasd', '<p>asdasd</p>\r\n');
 
 -- --------------------------------------------------------
 
@@ -89,6 +73,31 @@ INSERT INTO `events` (`e_id`, `event_date`, `event_title`, `description`, `statu
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `laws`
+--
+
+CREATE TABLE `laws` (
+  `l_id` int(11) NOT NULL,
+  `club_name` varchar(20) NOT NULL,
+  `laws` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `officers`
+--
+
+CREATE TABLE `officers` (
+  `o_id` int(11) NOT NULL,
+  `club_name` varchar(20) NOT NULL,
+  `club_adviser` varchar(50) NOT NULL,
+  `officer_name` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
@@ -105,7 +114,7 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`user_id`, `user_name`, `user_password`) VALUES
 (1, 'admin', '$2y$10$tDtuaoPvKgxjTTbTizAPB.qNor8U2MplTj1fCz46oyCr51pAMGN6G'),
 (2, 'garces', '$2y$10$XoDRV9LRdjoJrhkBWHqgJe6.rbRjcsbKOcKAhTEWZfRpMiVEayM..'),
-(3, 'test', '$2y$10$7aLWBHN11BgSjZ0WAwLkVu9brftbeuCWIzSb5gpuK1Xb1hCoz5NX2');
+(4, 'test', '$2y$10$RYaTkjEJ6DpAJ8xZlXbppuEzLgmHI7JeDzXpfKFUV65TV0bCzphbm');
 
 --
 -- Indexes for dumped tables
@@ -130,6 +139,12 @@ ALTER TABLE `events`
   ADD PRIMARY KEY (`e_id`);
 
 --
+-- Indexes for table `officers`
+--
+ALTER TABLE `officers`
+  ADD PRIMARY KEY (`o_id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -143,7 +158,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `advisers`
 --
 ALTER TABLE `advisers`
-  MODIFY `a_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `a_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `clubs`
@@ -158,10 +173,16 @@ ALTER TABLE `events`
   MODIFY `e_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
+-- AUTO_INCREMENT for table `officers`
+--
+ALTER TABLE `officers`
+  MODIFY `o_id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
