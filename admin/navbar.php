@@ -49,7 +49,7 @@
 
                             <li><a href="advisers" class=" hvr-bounce-to-right"><i class="fa fa-user nav_icon"></i><i>Clubs Advisers</i></a></li>
 
-                            <li><a href="" class=" hvr-bounce-to-right"><i class="fa fa-user nav_icon"></i><i>Clubs Officers</i></a></li>
+                            <li><a href="officers" class=" hvr-bounce-to-right"><i class="fa fa-user nav_icon"></i><i>Clubs Officers</i></a></li>
                     </ul>   
                   </li>
 
