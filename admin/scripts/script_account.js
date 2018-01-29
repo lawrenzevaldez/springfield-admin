@@ -59,9 +59,9 @@
 					$('#addAccount').modal('show');
 					$('#username').val(data.username);
 					$('#password').val(data.password);
-					$('.modal-title').val('Edit User Account');
+					$('.modal-title').val('Update User Account');
 					$('#account_id').val(account_id);
-					$('#action').val("Edit");
+					$('#action').val("Update");
 					$('#operation').val("Edit");
 				}
 			});

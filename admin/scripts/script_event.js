@@ -94,9 +94,9 @@
 					$('#eventTitle').val(data.event_title);
 					CKEDITOR.instances.eventTextArea.setData(data.description);
 					$('#eventStatus').val(data.status);
-					$('.modal-title').val('Edit Event');
+					$('.modal-title').val('Update Event Info');
 					$('#event_id').val(event_id);
-					$('#action').val("Edit");
+					$('#action').val("Update");
 					$('#operation').val("Edit");
 				}
 			});

@@ -64,9 +64,9 @@
 				{
 					$('#addLaw').modal('show');
 					$('#lawname').val(data.laws);
-					$('.modal-title').val('Edit Rules & Regulations');
+					$('.modal-title').val('Update Rules & Regulations');
 					$('#law_id').val(law_id);
-					$('#action').val("Edit");
+					$('#action').val("Update");
 					$('#operation').val("Edit");
 				}
 			});

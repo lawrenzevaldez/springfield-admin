@@ -67,9 +67,9 @@
 					$('#addAdvisers').modal('show');
 					$('#advisername').val(data.adviser_name);
 					$('#clubassigned').val(data.club_assigned);
-					$('.modal-title').val('Edit Club Handled');
+					$('.modal-title').val('Update Club Handled');
 					$('#adviser_id').val(adviser_id);
-					$('#action').val("Edit");
+					$('#action').val("Update");
 					$('#operation').val("Edit");
 				}
 			});

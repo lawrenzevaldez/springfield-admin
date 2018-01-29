@@ -71,9 +71,9 @@
 					$('#addClub').modal('show');
 					$('#clubname').val(data.club_name);
 					CKEDITOR.instances.clubinfo.setData(data.club_info);
-					$('.modal-title').val('Edit Club');
+					$('.modal-title').val('Update Club');
 					$('#club_id').val(club_id);
-					$('#action').val("Edit");
+					$('#action').val("Update");
 					$('#operation').val("Edit");
 				}
 			});
